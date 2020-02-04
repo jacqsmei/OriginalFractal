@@ -21,11 +21,11 @@ public void fractal(int x, int y, int siz) {
 	vertex(x-siz/2, y+siz/4);
 	endShape(CLOSE);
 
-	h+=5.25;
+	h+=5.5;
 	if (h>255) {
 		h=0;
 	}
-	
+
 	if (siz>10) {
 		if (x<=100) {
 			fractal(x+10, y, siz-10);
